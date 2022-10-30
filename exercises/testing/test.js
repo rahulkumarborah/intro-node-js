@@ -1,4 +1,8 @@
 // write some tests
+const { fixId } = require('./users');
+
 describe('users', () => {
-  test('first test', () => {});
+  test('fixId', () => {
+    expect(fixId('200')).toEqual(200);
+  });
 });
